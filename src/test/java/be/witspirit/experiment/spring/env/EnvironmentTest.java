@@ -47,7 +47,7 @@ public class EnvironmentTest extends AbstractJUnit4SpringContextTests {
 
         Assert.assertEquals("tstOverride", env.getProperty("prefixedProperty"));
 
-        Assert.assertEquals("DependentValue", env.getProperty("vcProperty"));
+        Assert.assertEquals("tstOverrideVcValue", env.getProperty("vcProperty"));
     }
 
     @Test
@@ -61,6 +61,6 @@ public class EnvironmentTest extends AbstractJUnit4SpringContextTests {
 
         Assert.assertEquals("tstOverride", prefixedProperty);
 
-        Assert.assertEquals("DependentValue", vcProperty);
+        Assert.assertEquals("tstOverrideVcValue", vcProperty);
     }
 }

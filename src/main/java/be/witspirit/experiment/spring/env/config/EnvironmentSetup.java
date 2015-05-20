@@ -30,7 +30,7 @@ public class EnvironmentSetup {
 
     @Bean
     public ValueContainer valueContainer() {
-        return new ValueContainer("DependentValue");
+        return new ValueContainer(env.getProperty("vcValue"));
     }
 
     @Bean
